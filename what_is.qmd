@@ -3,10 +3,7 @@ title: "What is NLP?<br>(for this course)"
 author: 
   - name: Josef Fruehwald
   - url: https://jofrhwld.github.io/
-format: 
-  html:
-    output-file: "index"
-    output-ext: "html"
+format: html
 license: "CC-BY-SA 4.0"
 editor: visual
 knitr:
