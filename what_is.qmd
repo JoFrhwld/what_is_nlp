@@ -252,7 +252,9 @@ tweet_df %>%
 However, this is a kind of lackluster approach to sentiment analysis nowadays. Many language models now now, as a by product of their string prediction training, have more complex representations of words than just a score between -5 and 5, and have representations of whole strings that can be used (so it won't give the same score to "good" and "not good").
 
 ```{python}
+#| label: "load siebert"
 #| echo: true
+#| eval: false
 #| message: false
 #| warning: false
 #| output: false
@@ -266,10 +268,15 @@ sentiment_analysis = pipeline("sentiment-analysis",
 ```
 
 ```{python}
+#| label: "run siebert"
 #| echo: true
+#| eval: false
 # python
 print(sentiment_analysis("IF THE ZOO BANS ME FOR HOLLERING AT THE ANIMALS I WILL FACE GOD AND WALK BACKWARDS INTO HELL"))
 print(sentiment_analysis("This ain't bad!"))
 ```
+
+    [{'label': 'NEGATIVE', 'score': 0.9990140199661255}]
+    [{'label': 'POSITIVE', 'score': 0.9944340586662292}]
 
 ## References
